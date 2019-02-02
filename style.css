@@ -1,0 +1,660 @@
+@charset "UTF-8";
+/* 
+ * Tomáš Audi - http://www.audisweb.cz
+ * audisweb.cz
+ */
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1;
+}
+
+* {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+body {
+  background: #E3E3E3;
+}
+
+main {
+  margin-left: 180px;
+}
+
+main.aktivni {
+  margin-left: 0;
+}
+
+.nadpisy h1, .nadpisy h2, #rectangle .nadpisy h1, #rectangle .nadpisy h2 {
+  color: #212121;
+  margin: 0 auto;
+  font: 700 50px/1 "Roboto Condensed";
+  text-align: center;
+  opacity: .8;
+  text-transform: uppercase;
+}
+
+.nadpisy {
+  width: 100%;
+  background: url("../img/bg/01.jpg") no-repeat;
+  background-size: 100% auto;
+  background-size: cover;
+  padding: 200px 0 100px 0;
+}
+
+.nadpisy h2 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.clanky {
+  background: #fff;
+  width: 100%;
+}
+
+.clanky article {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.clanky article p {
+  color: #333;
+  width: 100%;
+  font: 300 18px/1.5 "Roboto Condensed";
+  text-align: justify;
+}
+
+.clanky article p b, .clanky article p strong {
+  font-weight: 700;
+  color: #BA387D;
+}
+
+.clanky article p a {
+  color: #BA387D;
+  border-bottom: 1px dotted #BA387D;
+  text-decoration: none;
+}
+
+.clanky article p a:hover {
+  border-bottom-style: solid;
+}
+
+.clanky article q {
+  color: #777;
+  padding: 5px 5px 5px 15px;
+  margin: 10px 0;
+  border-left: 2px solid #E3E3E3;
+  display: block;
+  quotes: "" "";
+  font: 300 16px/25px "Roboto Condensed";
+}
+
+.clanky article q.aktivni {
+  border-left-color: #BA387D;
+}
+
+.clanky article .tlacitko {
+  background: #BA387D;
+  color: #FFF;
+  width: 200px;
+  min-height: 40px;
+  border: 1px solid #6c2048;
+  display: block;
+  margin: 10px auto;
+  font: 700 18px/40px "Roboto Condensed";
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.clanky article .tlacitko:hover {
+  background: #c94c8f;
+}
+
+sidebar {
+  width: 180px;
+  height: 100%;
+  background: #272727;
+  position: fixed;
+  top: 0;
+  left: -180px;
+  border-right: 1px solid #161616;
+}
+
+sidebar.aktivni {
+  left: 0;
+}
+
+sidebar a {
+  text-decoration: none;
+}
+
+sidebar header {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #161616;
+}
+
+sidebar header img {
+  height: 55px;
+  margin: 0px auto;
+  display: block;
+  border-radius: 555px;
+}
+
+sidebar header h1 {
+  color: #D8D8D8;
+  margin-top: 10px;
+  text-align: center;
+  font: 600 18px/22px "Exo 2";
+  text-transform: uppercase;
+}
+
+sidebar nav {
+  width: 100%;
+  padding: 20px 0;
+}
+
+sidebar nav ul {
+  width: 100%;
+}
+
+sidebar nav ul li {
+  width: 100%;
+  text-align: center;
+}
+
+sidebar nav ul li a {
+  color: #D8D8D8;
+  font: 200 16px/1.75 "Roboto Condensed";
+}
+
+sidebar nav ul li a:hover {
+  color: #fff;
+}
+
+sidebar aside {
+  background: #272727;
+  height: 100%;
+  width: 40px;
+  border-right: 2px solid #BA387D;
+  position: absolute;
+  top: 0;
+  right: -43px;
+}
+
+.social {
+  background: #272727;
+  border-top: 1px solid #161616;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 221px;
+  height: 40px;
+}
+
+.social ul {
+  height: 100%;
+  padding-top: 7.5px;
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.social ul li {
+  height: 25px;
+  width: 25px;
+  margin: 0 3px;
+  float: left;
+  position: relative;
+  right: 50%;
+}
+
+.social ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.social ul li a i {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  background: #D8D8D8;
+  color: #272727;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.social ul li a:hover i {
+  background: #fff;
+}
+
+.skryj {
+  color: #D8D8D8;
+  width: 40px;
+  height: 107px;
+  cursor: pointer;
+  border-bottom: 1px solid #161616;
+}
+
+.skryj:hover {
+  color: #fff;
+}
+
+.skryj i {
+  width: 100%;
+  height: 100%;
+  line-height: 107px;
+  display: none;
+  font-size: 25px;
+  text-align: center;
+}
+
+.skryj i.aktivni {
+  display: block;
+}
+
+.slider {
+  margin: 20px 0;
+}
+
+.slider li {
+  display: block;
+}
+
+.slider li a {
+  padding: 5px 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.slider li a span {
+  border-radius: 50%;
+  margin: 0px auto;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: #D8D8D8;
+}
+
+.slider li a:hover span {
+  background: #fff;
+}
+
+.slider li.aktivni a span {
+  background: #BA387D;
+}
+
+#rectangle .col-1 {
+  width: 8.33%;
+}
+
+#rectangle .col-2 {
+  width: 16.66%;
+}
+
+#rectangle .col-3 {
+  width: 25%;
+}
+
+#rectangle .col-4 {
+  width: 33.33%;
+}
+
+#rectangle .col-5 {
+  width: 41.66%;
+}
+
+#rectangle .col-6 {
+  width: 50%;
+}
+
+#rectangle .col-7 {
+  width: 58.33%;
+}
+
+#rectangle .col-8 {
+  width: 66.66%;
+}
+
+#rectangle .col-9 {
+  width: 75%;
+}
+
+#rectangle .col-10 {
+  width: 83.33%;
+}
+
+#rectangle .col-11 {
+  width: 91.66%;
+}
+
+#rectangle .col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  #rectangle {
+    /* For mobile phones: */
+  }
+  #rectangle [class*="col-"] {
+    width: 100%;
+  }
+}
+
+#rectangle body {
+  background: #E3E3E3;
+}
+
+#rectangle main {
+  margin-left: 180px;
+}
+
+#rectangle main.aktivni {
+  margin-left: 0;
+}
+
+#rectangle article {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+#rectangle article p {
+  color: #333;
+  width: 100%;
+  font: 300 18px/1.5 "Roboto Condensed";
+  text-align: justify;
+}
+
+#rectangle article p b, #rectangle article p strong {
+  font-weight: 700;
+  color: #BA387D;
+}
+
+#rectangle article p a {
+  color: #BA387D;
+  border-bottom: 1px dotted #BA387D;
+  text-decoration: none;
+}
+
+#rectangle article p a:hover {
+  border-bottom-style: solid;
+}
+
+#rectangle q {
+  color: #777;
+  padding: 5px 5px 5px 15px;
+  margin: 10px 0;
+  border-left: 2px solid #E3E3E3;
+  display: block;
+  quotes: "" "";
+  font: 300 16px/25px "Roboto Condensed";
+}
+
+#rectangle q.aktivni {
+  border-left-color: #BA387D;
+}
+
+#rectangle .tlacitko {
+  background: #BA387D;
+  color: #FFF;
+  width: 200px;
+  min-height: 40px;
+  border: 1px solid #6c2048;
+  display: block;
+  margin: 10px auto;
+  font: 700 18px/40px "Roboto Condensed";
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#rectangle .tlacitko:hover {
+  background: #c94c8f;
+}
+
+.nadpisy #rectangle h1, .nadpisy #rectangle h2, #rectangle .nadpisy h1, #rectangle .nadpisy h2 {
+  color: #212121;
+  margin: 0 auto;
+  font: 700 50px/1 "Roboto Condensed";
+  text-align: center;
+  opacity: .8;
+  text-transform: uppercase;
+}
+
+#rectangle .nadpisy {
+  width: 100%;
+  background: url("../img/bg/01.jpg") no-repeat;
+  background-size: 100% auto;
+  background-size: cover;
+  padding: 200px 0 100px 0;
+}
+
+#rectangle .nadpisy h2 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#rectangle body {
+  background: #fff;
+  color: #333;
+  line-height: 1;
+}
+
+#rectangle * {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+#rectangle ul {
+  list-style: none;
+}
+
+#rectangle article, #rectangle aside, #rectangle details, #rectangle figcaption, #rectangle figure, #rectangle footer, #rectangle header, #rectangle hgroup, #rectangle menu, #rectangle nav, #rectangle section, #rectangle main {
+  display: block;
+}
+
+#rectangle sidebar {
+  width: 180px;
+  height: 100%;
+  background: #272727;
+  position: fixed;
+  top: 0;
+  left: -180px;
+  border-right: 1px solid #161616;
+}
+
+#rectangle sidebar.aktivni {
+  left: 0;
+}
+
+#rectangle a {
+  text-decoration: none;
+}
+
+#rectangle header {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #161616;
+}
+
+#rectangle header img {
+  height: 55px;
+  margin: 0px auto;
+  display: block;
+  border-radius: 555px;
+}
+
+#rectangle header h1 {
+  color: #D8D8D8;
+  margin-top: 10px;
+  text-align: center;
+  font: 600 18px/22px "Exo 2";
+  text-transform: uppercase;
+}
+
+#rectangle nav {
+  width: 100%;
+  padding: 20px 0;
+}
+
+#rectangle nav ul {
+  width: 100%;
+}
+
+#rectangle nav ul li {
+  width: 100%;
+  text-align: center;
+}
+
+#rectangle nav ul li a {
+  color: #D8D8D8;
+  font: 200 16px/1.75 "Roboto Condensed";
+}
+
+#rectangle nav ul li a:hover {
+  color: #fff;
+}
+
+#rectangle aside {
+  background: #272727;
+  height: 100%;
+  width: 40px;
+  border-right: 2px solid #BA387D;
+  position: absolute;
+  top: 0;
+  right: -43px;
+}
+
+#rectangle .social {
+  background: #272727;
+  border-top: 1px solid #161616;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 221px;
+  height: 40px;
+}
+
+#rectangle .social ul {
+  height: 100%;
+  padding-top: 7.5px;
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+#rectangle .social ul li {
+  height: 25px;
+  width: 25px;
+  margin: 0 3px;
+  float: left;
+  position: relative;
+  right: 50%;
+}
+
+#rectangle .social ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#rectangle .social ul li a i {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  background: #D8D8D8;
+  color: #272727;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#rectangle .social ul li a:hover i {
+  background: #fff;
+}
+
+#rectangle .skryj {
+  color: #D8D8D8;
+  width: 40px;
+  height: 107px;
+  cursor: pointer;
+  border-bottom: 1px solid #161616;
+}
+
+#rectangle .skryj:hover {
+  color: #fff;
+}
+
+#rectangle .skryj i {
+  width: 100%;
+  height: 100%;
+  line-height: 107px;
+  display: none;
+  font-size: 25px;
+  text-align: center;
+}
+
+#rectangle .skryj i.aktivni {
+  display: block;
+}
+
+#rectangle .slider {
+  margin: 20px 0;
+}
+
+#rectangle .slider li {
+  display: block;
+}
+
+#rectangle .slider li a {
+  padding: 5px 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#rectangle .slider li a span {
+  border-radius: 50%;
+  margin: 0px auto;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: #D8D8D8;
+}
+
+#rectangle .slider li a:hover span {
+  background: #fff;
+}
+
+#rectangle .slider li.aktivni a span {
+  background: #BA387D;
+}
